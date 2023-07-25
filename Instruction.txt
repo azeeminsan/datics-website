@@ -10,3 +10,11 @@ Team Members:
 
 Website:
 	datics.com
+
+Work assign:
+	Okasha:
+		Home page
+	Yameen:
+		Company page
+	Azeem:
+		Services page
