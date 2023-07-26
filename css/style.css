@@ -1,0 +1,36 @@
+/* navbar by okasha start */
+.navbar{
+    position: relative;
+}
+.navbar-brand{
+    margin-left: 50px;
+}
+.item ul li a{
+        justify-content: space-between;
+}
+.item ul li a:hover{
+    color: #182e6f;
+}
+.end{
+    margin-left: 300px;
+}
+.end li{
+    list-style: none;
+}
+.end li a{
+    color: black;
+}
+.end li a:hover{
+    color: #ffb656;
+    transition: 1s
+}
+.btn{
+    margin-left: 10px ;
+    color: black;
+    background-color: #e9f2f9;
+}
+.btn:hover{
+    color: #e9f2f9;
+    background-color: #061e64;
+}
+/* navbar end */
