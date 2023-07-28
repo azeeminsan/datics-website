@@ -157,8 +157,16 @@
          }
          .icon-heading{
             font-size: 20px;
-            color: rgb(108, 108, 201);
-            cursor: grab;
+            color: #0C4E9E;
+            cursor: pointer;
+         }
+        .icon-para{
+            display: none;
+        }
+        .icon-heading1:hover + .icon-para{
+            display: block;
+        }
+        /* process end */
     </style>
 </head>
 
@@ -221,18 +229,40 @@
                 <div class="col-md-6" id="process-img">
                     <img class="pt-lg-4" src="./images/process-img.png" alt="" height="500px">
                 </div>
-                <div class="col-md-6">
-                    <span>Our Development Process</span>
-                    <h1>Expertise in every aspect of the product lifecycle</h1> 
-                    <div class="icon-heading">
+                <div class="col-md-6 pt-5">
+                    <span style="font-weight: 500;text-transform: capitalize;color: #0C4E9E;">our Development Process</span>
+                    <h1 style="font-weight: bold; margin-top: 10px;">Expertise in every aspect of the product lifecycle</h1> 
+                    <div class="icon-heading pt-4">
                         <img src="./images/checked.png" alt="" height="30px">
-                        <span class="icon-headin1"><b>Ideation & Evaluation</b></span>
+                        <span class="p-2 icon-heading1"><b>Ideation & Evaluation</b></span>
+                        <p class="icon-para pt-2">Validate your product idea, deliver scoping requirements and <br> identify the right resources. Give your product a firm/secure <br> structure; plan, evaluate and assess essential features your <br> product needs to meet your goals.</p>
+                    </div> 
+                    <div class="icon-heading pt-4">
+                        <img src="./images/checked.png" alt="" height="30px">
+                        <span class="p-2 icon-heading1"><b>Product Design</b></span>
+                        <p class="icon-para pt-2">Functional systems for tangible and marketable solutions. <br> Brainstorm engaging user experiences for digital products; <br> we solve real problems and improve vital business metrics through <br> engaging and complete interfaces.</p>
+                    </div> 
+                    <div class="icon-heading pt-4">
+                        <img src="./images/checked.png" alt="" height="30px">
+                        <span class="p-2 icon-heading1"><b>Quality Assurance</b></span>
+                        <p class="icon-para">Eliminate delays and bugs before they happen. <br> Offering exceptional product Quality Assurance for innovators to achieve their goals and maintaining an amazing customer experience. <br> </p>
+                    </div> 
+                    <div class="icon-heading pt-4">
+                        <img src="./images/checked.png" alt="" height="30px">
+                        <span class="p-2 icon-heading1"><b>Support & Maintenance</b></span>
+                        <p class="icon-para">Round the clock support teams available for proactive solutions, <br> and on-demand troubleshooting services to keep things running <br> smoothly.</p>
+                    </div> 
+                    <div class="icon-heading pt-4">
+                        <img src="./images/checked.png" alt="" height="30px">
+                        <span class="p-2 icon-heading1"><b>Scale & Automate</b></span>
+                        <p class="icon-para">Refine your exisitng products by adapting automated solutions <br> and scale your business to new heights.</p>
                     </div> 
                     
                 </div>
             </div>
         </div>
     </div>
+    <!-- process end -->
 </body>
 
 </html>
