@@ -1,0 +1,225 @@
+/* okasha */
+/* navbar start */
+.navbar{
+    background-color: white;
+    position: fixed !important;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    z-index: 50px;
+}
+.navbar-brand{
+    margin-left: 50px;
+}
+.item{
+    margin-left: 20px;
+    padding: 20px;
+    margin-left: 50px;
+}
+.item ul li a:hover{
+    color: #ffb454;
+}
+.end{
+    margin-right: 70px;
+}
+.end li{
+    list-style: none;
+}
+.end li a{
+    color: black;   
+}
+.end li a:hover{
+    color: #ffb454;
+    transition: 0.5s;
+}
+.btn-1{
+    background-color: #e9f2f9;
+    margin-right: 100px;
+}
+.btn-1:hover{
+    color: white;
+    background-color: #061e64;
+}
+/* navbar end */
+/* header */
+.hero{
+    background-image: url(../images/bg-banner-home-9-cop.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+.para{
+    text-align: center;
+    text-align: justify;
+    margin-top: 100px;
+    padding-left: 150px;
+}
+.para-1{
+    font-size: larger;
+    padding-right: 100px;
+}
+.btn-2{
+    background-color: #061e64;
+    color: #e9f2f9;
+}
+.btn-2:hover{
+    background-color: #031342;
+    color: #e9f2f9;
+}
+.center{
+    background-image: url(../images/bg-art-home4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 500px;
+}
+.center h1{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.center p{
+    padding-left: 80px;
+}
+.check{
+    color: rgb(167, 15, 167);
+    margin-left: 70px;
+}
+.center-2{
+    background-image: url(../images/bg-art-61.png );
+    background-size: cover  ;
+    background-position: right;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-left: 355px;
+}
+.center a{
+    color: black;
+    text-decoration: none;
+}
+.play{
+    margin-left: 100px;
+    color: #ffb454;
+}
+.play:hover{
+    color: #061e64;
+}
+.strong{
+    margin-left: 15px;
+}
+.center-2 img{
+        width: 100%;
+        height: 600px;
+}
+.hero-4{
+    background-color: #061e64;
+    background-image: url(../images/bg2-home9.png);
+    width: 1350px;
+    height: 1000px;
+}
+.hero-4 h1{
+    color: antiquewhite;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.hero-4 p{
+    margin-left: 80px;
+    font-size: large;
+}
+.block{
+    background-color: #031342;
+    border-color: transparent;
+}
+.frame{
+
+    background-image: url(../images/bg-art-home4.png);
+    background-repeat: no-repeat;
+}
+.frame img{
+    height: 500px;
+    margin-left: 120px;
+}
+.frame-1{
+    background-image: url(../images/bg-art-61.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 400px;
+}
+.trust{
+    width: 100%;
+    height: 700px;
+}
+.trust h1{
+    margin-left: 50px;
+}
+.trust p{
+    text-justify: distribute-all-lines;
+    margin-left: 50px;
+    font-size: x-large;
+}
+.back{
+    width: 100%;
+    height: 900px;
+    background-image: url(../images/bg-banner-home-9-cop.jpg);
+}
+.back h1{
+    text-align: center;
+    margin-top: 210px;
+}
+.back p{
+    font-size: x-large;
+    text-align: center;
+    justify-content: right;
+    margin-top: 70px;
+}
+.easy{
+    width: 100%;
+    height: 700px;
+    display: inline-block;
+    display: block;
+}
+.easy h1{
+    text-align: center;
+}
+.easy img{
+    height: 180px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+.easy button{
+    color: #e9f2f9;
+    background-color: #061e64;
+    border: transparent;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.easy button:hover{
+    color: #e9f2f9;
+    background-color: #031342;
+}
+.home{
+    background-image: url(../images/bg-case2-home9.png);
+    background-repeat: no-repeat;
+    margin-left: 70px;
+}
+.box{
+    width: 90px;
+    height: 30px;
+    background-color: purple;
+    line-height: 30px;
+    color: #e9f2f9;
+    text-align: center;
+    border-radius: 5px;
+    display: inline;
+}
+/* footer start */
+.footer {
+    width: 100%;
+    height: 800px;
+    background-image: url(./images/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* footer end */
+/* okasha */
