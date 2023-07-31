@@ -16,5 +16,7 @@ Work assign:
 		Home page
 	Yameen:
 		Company page
+		Event page.
+		career page.
 	Azeem:
 		Services page

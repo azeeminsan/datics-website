@@ -1,14 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/fontawesome.min.css">
     <script src="./fontawesome-free-6.4.0-web/js/all.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Company-Datics</title>
+    <style>
+        /* header start */
+        #company_header1 {
+            width: 50%;
+            height: 700px;
+            background-image: url(./images/bg-art-home4.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 550px;
+        }
+
+        #company_header2 {
+            width: 50%;
+            height: 700px;
+        }
+
+        .my-font {
+            font-size: 20px;
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mheading {
+            padding-top: 150px;
+            padding-left: 100px;
+        }
+
+        .company-heading {
+            font-size: 20px;
+            color: blue;
+        }
+
+        .company-heading1 {
+            font-weight: bolder;
+            font-size: 50px;
+        }
+
+        .company-paragraph1 {
+            font-size: 20px;
+            padding-top: 40px;
+        }
+
+        /* video button */
+        /* Styling for the video play button */
+        .video-button {
+            width: 80px;
+            height: 80px;
+            background-color: #061E64;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 40px;
+        }
+
+        .video-button:hover {
+            background-color: #FFB454;
+        }
+
+        /* Styling for the play icon inside the button */
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 20px solid white;
+            margin-left: 10px;
+        }
+
+        /* video button end */
+
+        .btn {
+            border-radius: 20%;
+            margin-top: 100px;
+            background-color: #061E64;
+            border-color: black;
+            font-size: 20px;
+        }
+
+        .company-img-header2 {
+            padding-top: 220px;
+        }
+
+        #company-main-1 {
+            width: 50%;
+            height: 700px;
+        }
+
+        #company-main-2 {
+            width: 50%;
+            height: 700px;
+        }
+
+        .body {
+            background-color: #061E64;
+        }
+
+        #company-main-1 {
+            background-image: url(./images/body.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 600px;
+        }
+
+        #company-main-2 {
+            background-image: url(./images/bg-art-home4.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 400px;
+            background-position: bottom;
+            /* background-position: bottom; */
+        }
+
+        .myheading {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #main-heading {
+            color: white;
+            font-weight: 700;
+            padding-top: 20px;
+        }
+
+        #main-heading1 {
+            color: white;
+            padding-top: 80px;
+        }
+
+        #para-heading {
+            color: white;
+            font-size: 19px;
+        }
+
+        #main-heading2 {
+            color: white;
+            padding-top: 70px;
+        }
+
+        #para-heading1 {
+            color: white;
+            font-size: 18px;
+        }
+
+        /* header end */
+        /* company story start */
+        .story {
+            height: 900px;
+            width: 100%;
+            background-image: url(./images/story.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 1200px;
+            background-position: right;
+            padding-top: 200px;
+        }
+
+        .touch-button {
+            border-radius: 10px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .touch-button:hover {
+            background-color: #061E64;
+        }
+
+        /*company story end  */
+
+        /* company story1 heading and para start */
+        #headi2 {
+            font-size: 50px;
+            padding: 8px;
+        }
+
+        #story-para {
+            font-size: 20px;
+            padding-top: 25px;
+            padding-left: 5px;
+        }
+
+        /* company story1 heading and para start */
+
+        /* process start */
+
+        .process {
+            width: 100%;
+            height: 800px;
+        }
+
+        .process1 {
+
+            height: 600px;
+            background-image: url(./images/process.jpg);
+            background-size: cover;
+            border-radius: 30px;
+        }
+
+        #process-img {
+            padding-top: 50px;
+        }
+
+        .icon-heading {
+            font-size: 20px;
+            color: #0C4E9E;
+            cursor: pointer;
+        }
+
+        .icon-para {
+            display: none;
+        }
+
+        .icon-heading1:hover+.icon-para {
+            display: block;
+        }
+
+        /* process end */
+
+
+        /* slider start */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider-container {
+            overflow: hidden;
+            background-color: #ffffff;
+            height: 800px;
+        }
+
+        .card-slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .card {
+            flex: 0 0 300px;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 10px;
+            margin: 0;
+            background-color: #b1b1b1;
+            text-align: center;
+        }
+
+        .card h6 {
+            padding: 10px;
+            margin: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        /* Animation for sliding the cards */
+
+        .card-slider {
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-1600px);
+            }
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(1600px);
+            }
+
+            100% {
+                transform: translateX(-1600px);
+            }
+        }
+
+        /* Pause animation on hover */
+        .card-slider:hover {
+            animation-play-state: paused;
+        }
+
+        /* slider end */
+
+        /* value section start */
+        .value-section {
+            width: 100%;
+            height: 1000px;
+            background-image: url(./images/process.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* value section end */
+
+        /* email section start */
+        .email-section {
+            width: 100%;
+            height: 300px;
+            background-image: url(./images/bg2-home9.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #061E64;
+        }
+        .btn1{
+            font-size: 23px;
+            border-radius: 5px;
+        }
+        /* email section end */
+
+        /* footer start */
+        .footer {
+            width: 100%;
+            height: 800px;
+            background-image: url(./images/footer.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* footer end */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 50px;
+            right: 30px;
+            z-index: 99;
+            font-size: 30px;
+            border: none;
+            outline: none;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #061E64;
+            color: rgb(158, 158, 158);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!--navbar-start  -->
+    <nav style="position: fixed;top: 0; width: 100%;z-index: 1;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/logo-copy-1.png" alt=""
+                    style="width: 145px; height: auto;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse item" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="padding: 15px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link " href="#">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link " href="#">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link " href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link " href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
+            <a style="color: rgb(95, 95, 95);padding-right: 100px;" href=""><b>Hire a Resource</b></a>
+            <button
+                style="background-color: #a0a0a0;color: white;font-size: 20px;border-color: #b4b4b4;border-radius: 10px;"
+                type="button">Get In Touch</button>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- header start -->
+
+    <div class="container-fluid">
+        <div class="row m-0">
+            <div class="col-md-6 mheading" id="company_header1">
+                <h1 class="company-heading">We are</h1>
+                <h1 class="company-heading1">Building Solutions <br>That Matter</h1>
+                <p class="company-paragraph1">Our company doesn't just develop products, we build,<br> accelerate, and
+                    support your business.<br>
+                    Our company takes your idea, vision, or business goals<br> and transforms them into a web app or an
+                    enterprise digital<br> solution.</p>
+                <!-- button -->
+                <!DOCTYPE html>
+
+                <!-- Video play button -->
+                <div class="video-button">
+                    <div class="play-icon"></div>
+                </div>
+                <div style="padding-left: 100px;margin-top: -45px;">
+                    <h5><b> BEHIND THE SCENE</b></h5>
+                </div>
+                <!-- button end -->
+
+            </div>
+            <div class="col-md-6" id="comapany_header2">
+                <img class="company-img-header2" src="./images/header-2.png" alt="" width="600px">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid body">
+        <div class="row m-0">
+            <div class="col-md-6 ext " id="company-main-1"></div>
+            <div class="col-md-6  pt-lg-5 " id="company-main-2">
+                <span class="myheading">To Help Your Company Scale</span>
+                <h1 id="main-heading">We enable businesses to reach their goals</h1>
+                <h3 id="main-heading1">Our Vision</h3>
+                <p id="para-heading">As a software development company, we utilize <br> technology-driven solutions
+                    to leverage data and save <br> resources prompting better decision making.</p>
+                <h3 id="main-heading2">Our Mission</h3>
+                <p id="para-heading1">Drive change using technology and innovation to <br> help influence better
+                    business decision making <br> prompting growth using the latest technologies and <br> trends.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- our story -->
+
+    <div class="container-fluid story">
+        <div class="row m-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 story1">
+                <span id="headi2">Our</span><strong id="headi2">Story</strong>
+                <p id="story-para">Founded in 2018, Datics AI was established to provide complete product development to
+                    enterprise and startups alike. We believe in building long term relationships with our clients and
+                    promise them satisfaction through timely and quality services. With the processes of a
+                    well-established enterprise and the agility of a startup, we form a unique combination as a service
+                    provider. We strongly believe in going up and beyond to meet our clientele’s expectations so that we
+                    leave a lasting impression as a success story to remember.
+
+                    GET IN TOUCH</p>
+                <button class="btn-outline-primary touch-button">GET IN TOUCH</button>
+            </div>
+            <div class="col-md-6 ">
+                <img src="./images/story-2.png" class="story2 img-fluid" style="margin-top: -50px !important;" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- our story end -->
+
+    <!-- process start -->
+    <div class="container-fluid process">
+        <div class="container process1">
+            <div class="row">
+                <div class="col-md-6" id="process-img">
+                    <img class="pt-lg-4" src="./images/process-img.png" alt="" height="500px">
+                </div>
+                <div class="col-md-6 pt-5">
+                    <span style="font-weight: 500;text-transform: capitalize;color: #0C4E9E;">our Development
+                        Process</span>
+                    <h1 style="font-weight: bold; margin-top: 10px;">Expertise in every aspect of the product lifecycle
+                    </h1>
+                    <div class="icon-heading pt-4">
+                        <img src="./images/checked.png" alt="" height="30px">
+                        <span class="p-2 icon-heading1"><b>Ideation & Evaluation</b></span>
+                        <p class="icon-para pt-2">Validate your product idea, deliver scoping requirements and <br>
+                            identify the right resources. Give your product a firm/secure <br> structure; plan, evaluate
+                            and assess essential features your <br> product needs to meet your goals.</p>
+                    </div>
+                    <div class="icon-heading pt-4">
+                        <img src="./images/checked.png" alt="" height="30px">
+                        <span class="p-2 icon-heading1"><b>Product Design</b></span>
+                        <p class="icon-para pt-2">Functional systems for tangible and marketable solutions. <br>
+                            Brainstorm engaging user experiences for digital products; <br> we solve real problems and
+                            improve vital business metrics through <br> engaging and complete interfaces.</p>
+                    </div>
+                    <div class="icon-heading pt-4">
+                        <img src="./images/checked.png" alt="" height="30px">
+                        <span class="p-2 icon-heading1"><b>Quality Assurance</b></span>
+                        <p class="icon-para">Eliminate delays and bugs before they happen. <br> Offering exceptional
+                            product Quality Assurance for innovators to achieve their goals and maintaining an amazing
+                            customer experience. <br> </p>
+                    </div>
+                    <div class="icon-heading pt-4">
+                        <img src="./images/checked.png" alt="" height="30px">
+                        <span class="p-2 icon-heading1"><b>Support & Maintenance</b></span>
+                        <p class="icon-para">Round the clock support teams available for proactive solutions, <br> and
+                            on-demand troubleshooting services to keep things running <br> smoothly.</p>
+                    </div>
+                    <div class="icon-heading pt-4">
+                        <img src="./images/checked.png" alt="" height="30px">
+                        <span class="p-2 icon-heading1"><b>Scale & Automate</b></span>
+                        <p class="icon-para">Refine your exisitng products by adapting automated solutions <br> and
+                            scale your business to new heights.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- process end -->
+
+
+    <!-- slider start -->
+    <div class="container up-con">
+        <div class="row">
+            <div class="12">
+                <span style="font-size: 20px; color: #0C4E9E; font-weight: 500;">Our Disruptors</span>
+                <h1 class="pt-3" style="font-weight: bold;font-size: 50px;">Meet The Team</h1>
+                <p class="pt-4" style="font-size: 18px;font-weight: 400;">We strive to give each product our very best.
+                    Meet the team that has work tirelessly to help bring the vision of our company to life.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="slider-container pt-5">
+            <div class="card-slider">
+                <div style="border-radius: 20px;" class="card">
+                    <img src="./images/1 (1).png" alt="Image 1">
+                    <h3><b>Kanwal Malik</b></h3>
+                    <h6>Head of Talent Acquisition, People Management & Culture Excellence
+                    </h6>
+                    <a class="text-center pt-3" href="https://www.linkedin.com/in/kanwal-malik-b85b1a40/"
+                        target="_blank" tabindex="0"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div style="border-radius: 20px;" class="card">
+                    <img src="./images/1 (2).png" alt="Image 2">
+                    <h3><b>Umair Majeed</b></h3>
+                    <h6>Cheif Executive Officer</h6>
+                    <a class="text-center pt-3" href="https://www.linkedin.com/in/umairmajeedrana/" target="_blank"
+                        tabindex="0"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div style="border-radius: 20px;" class="card">
+                    <img src="./images/1 (3).png" alt="Image 3">
+                    <h3><b>Umar Majeed</b></h3>
+                    <h6>Cheif Technology Officer</h6>
+                    <a class="text-center pt-3" href="https://www.linkedin.com/in/umarmajeedrana/" target="_blank"
+                        tabindex="0"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div style="border-radius: 20px;" class="card">
+                    <img src="./images/1 (4).png" alt="Image 3">
+                    <h3><b>Daniyal Ahmad</b></h3>
+                    <h6>Engineering Manager</h6>
+                    <a class="text-center pt-3" href="https://www.linkedin.com/in/danyal-ahmad-b9859357/"
+                        target="_blank" tabindex="0"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div style="border-radius: 20px;" class="card">
+                    <img src="./images/1 (5).png" alt="Image 3">
+                    <h3><b>Faraz Younis</b></h3>
+                    <h6>Vice President Engineering</h6>
+                    <a class="text-center pt-3" href="https://www.linkedin.com/in/farazyounis/" target="_blank"
+                        tabindex="0"><i class="fab fa-linkedin-in"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider section end -->
+
+    <!-- value section start -->
+    <div class="container-fluid value-section">
+        <div class="row">
+            <div class="value-heading text-center pt-5">
+                <h1 style="padding-top: 100px; font-size: 50px;"><b>Our Core Values</b></h1>
+                <p style="font-size: 20px; padding-top: 20px;">Business development, organizational, professional and
+                    <br>
+                    personal growth originate from the basic values of Datics:
+                </p>
+            </div>
+            <div style="padding-left: 50px; padding-right: 50px;" class="container text-center pt-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div style="border-radius: 40px;" class="card">
+                            <img style="height: 290px;" class="value1" src="./images/value1.png" alt="">
+                            <div class="card-body">
+                                <h4 style="border-bottom: 2px solid black;" class="card-title"><b>Transparency</b></h4>
+                                <p class="card-text">We believe in 100% transparency with our clients and it
+                                    motivates us deliver incredible results.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div style="border-radius: 40px;" class="card ">
+                            <img style="height: 290px;" src="./images/value5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 style="border-bottom: 2px solid black;" class="card-title"><b>Open Feedback</b></h4>
+                                <p class="card-text">Fostering a culture of open and honest communication to boost
+                                    productivity and improved job satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div style="border-radius: 40px;" class="card">
+                            <img style="height: 290px;" src="./images/value3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 style="border-bottom: 2px solid black;" class="card-title"><b> Satisfaction</b></h4>
+                                <p class="card-text">At Datics, our highest priority is to attain customer satisfaction
+                                    through continuous...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div style="border-radius: 40px;" class="card">
+                            <img style="height: 290px;" src="./images/valu4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 style="border-bottom: 2px solid black;" class="card-title"><b>Innovation</b></h4>
+                                <p class="card-text">We encourage new ideas; <br> make it safe to bring them <br>
+                                    forward and uplift those who think out of the box.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- value section end -->
+
+    <!-- email section start -->
+    <div class="container-fluid email-section">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 style="color: white; text-align: center;padding-top: 20px;"><b>Subscribe For Newsletter</b></h1>
+                <p class="pt-3" style="color: white;text-align: center;">The Datics Connection <br>
+                    Your connection to the latest technology news</p><br><br>
+                <div style="padding-top: 5px;">
+                    <input
+                        style="background-color: transparent;border: 2px solid white;width: 480px;border-radius: 2px;"
+                        type="text" placeholder="Email">
+                    <button style="border: transparent;border-radius: 5px;" type="button" class="btn1 btn-warning">Warning</button>
+                </div>
+
+            </div>
+            <div class="col-md-3"></div>
+
+
+        </div>
+    </div>
+    <!-- email section end -->
+
+    <!-- footer start -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="contact text-center pt-5">
+                <h1><b>Contact Us</b></h1>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3 pt-5">
+                <h2 style="padding-top: 100px;"><b><u>USA OFFICE</u></b></h2>
+                <div class="address1">
+                    <div style="padding-top: 50px; padding-left: 20px;" class="usa-address">
+                        <img src="./images/placeholder (1).png" alt="" height="30px">
+                    </div>
+                    <div style="padding-left: 70px;margin-top: -27px;" class="address1">
+                        <h4>USA Address:</h4>
+                        <p style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">1353, 701 Tillery <br>
+                            Street Unit 12, <br> Austin, TX, Travis, US <br> 78702</p>
+                    </div>
+                    <div style="padding-left: 15px;" class="mail-address pt-4">
+                        <img src="./images/3296467 (1).png" alt="" height="30px">
+                        <h4 style="padding-left: 60px;margin-top: -27px;">Email</h4>
+                        <p style="font-size: 15px; padding-left: 60px;">business@datics.ai</p>
+                    </div>
+                    <div style="padding-left: 15px;padding-top: 40px;" class="phone">
+                        <img src="./images/1959251 (1).png" alt="" height="30px">
+                        <h4 style="padding-left: 60px; margin-top: -27px;">Phone</h4>
+                        <p style="font-size: 15px; padding-left: 60px;">+1(985) 260-8864</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding-top: 148px;" class="col-md-3">
+                <h2><b><u>Pakistan Office</u></b></h2>
+                <div class="address1">
+                    <div style="padding-top: 50px; padding-left: 20px;" class="usa-address">
+                        <img src="./images/placeholder (1).png" alt="" height="30px">
+                    </div>
+                    <div style="padding-left: 70px;margin-top: -27px;" class="address1">
+                        <h4>Pak Address:</h4>
+                        <p style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">107-G, Dha Phase1, Lahore,
+                            <br>
+                            Pakistan
+                        </p>
+                    </div>
+                    <div style="padding-left: 15px;" class="mail-address pt-4">
+                        <img src="./images/3296467 (1).png" alt="" height="30px">
+                        <h4 style="padding-left: 60px;margin-top: -27px;">Email</h4>
+                        <p style="font-size: 15px; padding-left: 60px;">contact@datics.ai</p>
+                    </div>
+                    <div style="padding-left: 15px;padding-top: 40px;" class="phone">
+                        <img src="./images/1959251 (1).png" alt="" height="30px">
+                        <h4 style="padding-left: 60px; margin-top: -27px;">Phone</h4>
+                        <p style="font-size: 15px; padding-left: 60px ;">+92 333 4929891</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="padding-top: 148px;" >
+                    <h2><b><u>Follow Us</u></b></h2>
+                </div>
+                <div style="padding-top: 50px;" class="social-icon">
+                    <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-2741d9a"
+                            href="https://www.facebook.com/datics/" target="_blank">
+                            <i class="fab fa-facebook"></i></a>
+                    </span>
+                    <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-eb15b91"
+                            href="https://www.youtube.com/channel/UC_eqnYF7OeBzgHH0-4hiP2g" target="_blank">
+                            <i class="fab fa-youtube"></i></a>
+                    </span>
+                    <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                        <a style="text-decoration: none;"
+                            class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-61a7a50"
+                            href="https://twitter.com/datics_ai" target="_blank">
+                            <i class="fab fa-twitter"></i> </a>
+                    </span>
+                    <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                        <a style="text-decoration: none;"
+                            class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-cdf887f"
+                            href="https://www.linkedin.com/company/datics-ai/" target="_blank">
+                            <i class="fab fa-linkedin"></i> </a>
+                    </span>
+                    <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-2741d9a"
+                            href="https://www.instagram.com/datics.ai/" target="_blank">
+                            <i class="fab fa-instagram"></i> </a>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- footer end -->
+    <div style="height: 50px;" class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <p>© 2023 Datics All Right Revered.
+                </p>
+            </div>
+            <div class="col-md-6 text-end">
+                <h4>Developer:Yameen Bhatti</h4>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+    </div>
 </body>
+
 </html>
