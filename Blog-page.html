@@ -40,15 +40,107 @@
 
         }
         .card{
-            width: 100%;
-            height: 500px;
+        height: 380px !important;
+        }
+        .custom-img:hover{
+           background-color: black;
+            
         }
         /* card css end */
+        .search-box{
+            width: 100%;
+            height: 400px;
+            background-color: #370080;
+        }
+        #mail{
+            background-color: transparent;
+            border: none;
+            outline: 1px solid rgb(160, 160, 160);
+            padding: 10px;
+            width: 35%;
+            border-radius: 5px;
+            color: rgb(176, 176, 176);
+        }
+        #mail::placeholder{
+            color: rgb(157, 157, 157);
+        }
+        .ebtn{
+            padding: 8px 20px;
+            border: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            width: 170px;
+            margin-left: 10px;
+            color: white;
+            background-color: rgb(255, 221, 70);
+        }
+                /* footer css start */
+                .footer {
+            width: 100%;
+            height: 800px;
+            background-image: url(./images/footer.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* footer css end */
     </style>
 </head>
 <body>
+    <!--navbar-start  -->
+    <nav style="position: fixed;top: 0; width: 100%;z-index: 1;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/logo-copy-1.png" alt=""
+                    style="width: 145px; height: auto;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse item" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="padding: 15px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link " href="#">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link " href="#">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link " href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px;" class="nav-link " href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
+            <a style="color: rgb(95, 95, 95);padding-right: 100px;" href=""><b>Hire a Resource</b></a>
+            <button class="btn btn-primary">Get In Touch</button>
+        </div>
+    </nav>
+    <!-- Navbar end -->
      <!-- header-blog start -->
-     <div class="container-fluid">
+     <div class="container-fluid m-lg-5">
         <div class="row">
             <div class="col-6 p-lg-5" id="services_header1" >
                 <h6 class="myfont"  id="header1"><b>DATICS BLOGS</b></h6>
@@ -56,11 +148,11 @@
                 <pre class="text-secondary pt-4 myfont">Providing insight and expertise on the latest technology developments and trends by sharing
 blogs on a variety of topics including software development,
 cybersecurity, and emerging technologies. From helpful how-to
- guides to in-depth analysis, we aim to keep you informed and
-  up-to-date on the ever-evolving world of technology. Stay
-   tuned for our latest posts and feel free to reach out with
-    any questions or suggestions for future content. </pre>
-<button class="btn-primary">Behind the scenes</button>
+guides to in-depth analysis, we aim to keep you informed and
+up-to-date on the ever-evolving world of technology. Stay
+tuned for our latest posts and feel free to reach out with
+any questions or suggestions for future content. </pre>
+<button class="btn btn-primary" style="margin-left: 6px;">Behind the scenes</button>
 
             </div>
             
@@ -72,19 +164,198 @@ cybersecurity, and emerging technologies. From helpful how-to
 
     </div>
 <!-- header-blogs end -->
-<!-- cards start -->
+<!-- first row of card gallery start -->
 
 
-<div class="container">
-    <div class="row border">
-        <div class="col-md-4 border">1</div>
-        <div class="col-md-4 border">2</div>
-        <div class="col-md-4 border">3</div>
+<div class="container mt-lg-5">
+    <div class="row">
+        <div class="col-md-4 card">
+            <img class="img-thumbnail custom-img h-50 w-100" src="./images/NFT-Impact-min-1536x878.jpg" alt="">
+            <h5 class="myfont"><b>How NFTs are Transforming Traditional Industries</b></h5>
+            <ul><li class="text-warning">July 12, 2023</li></ul>
+            <p class="">Exploring the transformative impact of NFTs on various industries and everyday life.</p>
+            <p class="text-warning">Read more</p>
+        </div>
+        <div class="col-md-4 card">
+            <img   class="img-thumbnail custom-img h-50 w-100" src="./images/ezgif.com-webp-to-jpg-1-768x401.jpg" alt="">
+            <h5 class="myfont"><b>Business Analyst & ChatGPT: A match made in heaven?</b></h5>
+            <ul><li class="text-warning">July 7, 2023</li></ul>
+            <p class="">If used correctly, ChatGPT can be a powerful tool for Business Analysts.</p>
+            <p class="text-warning">Read more</p>
+        </div>
+        <div class="col-md-4 card">
+            <img class="img-thumbnail custom-img h-50 w-100" src="./images/G-vs-Chat-copy-768x459.jpg" alt="">
+            <h5 class="myfont"><b>Bard vs ChatGPT <span> <br></span> Blog</b></h5>
+            <ul><li class="text-warning">June 22, 2023</li></ul>
+            <p class="">The two most powerful AI language models: Bard vs ChatGPT. But which one is...</p>
+            <p class="text-warning ">Read more</p>
+        </div>
+       
+
+    </div>
+</div>
+    <!-- first row of card gallery end -->
+
+    <!-- second row of card gallery start -->
+    <div class="container mt-lg-5">
+    <div class="row mt-4">
+        <div class="col-md-4 card">
+            <img class="img-thumbnail custom-img h-50 w-100" src="./images/tea.png" alt="">
+            <h5 class="myfont"><b>How To Make A Cover Letter: 3 Golden Rules</b></h5>
+            <ul><li class="text-warning">April 19, 2023</li></ul>
+            <p class="">Secure that first round interview with these 3 golden rules.</p>
+            <p class="text-warning">Read more</p>
+        </div>
+        <div class="col-md-4 card">
+            <img   class="img-thumbnail custom-img h-50 w-100" src="./images/RESUME.jpg" alt="">
+            <h5 class="myfont"><b>How Businesses Can Use Artificial Intelligence To Boost Sales?</b></h5>
+            <ul><li class="text-warning">April 18, 2023</li></ul>
+            <p class="">Discover how the use of artificial intelligence in sales helps businesses grow!</p>
+            <p class="text-warning">Read more</p>
+        </div>
+        <div class="col-md-4 card">
+            <img class="img-thumbnail custom-img h-50 w-100" src="./images/G-vs-Chat-copy-768x459.jpg" alt="">
+            <h5 class="myfont"><b>Earn Passive Income with ChatGPT and MidJourney<span> <br></span> Blog</b></h5>
+            <ul><li class="text-warning">April 16, 2023</li></ul>
+            <p class="">Generate passive income using ChatGPT & MidJourney AI.</p>
+            <p class="text-warning ">Read more</p>
+        </div>
+       
+
+    </div>
+</div>
+    <!-- second row of card gallery end -->
+
+</div>
+<!-- cards end -->
+<!-- search bar start -->
+<div class="container-fluid ">
+    <div class="row mt-lg-5 search-box">
+        <div class="col-lg-12">
+            <h1 class="myfont text-white mt-lg-5" align="center">Subscribe For Newsletter</h1>
+            <p align="center" class="text-secondary myfont">The Datics Connection <br>
+                Your connection  to the latest technology news</p>
+               <div class="d-flex justify-content-center">
+                <input type="email" placeholder="Email" id="mail"><button class=" ebtn">Send</button>
+
+               </div>
+        </div>
+            
+                
+
 
     </div>
 
 </div>
-<!-- cards end -->
+
+<!-- search bar end -->
+   <!-- footer start -->
+   <div class="container-fluid footer pt-lg-5">
+    <div class="row m-0">
+        <div class="contact text-center pt-5">
+            <h1><b>Contact Us</b></h1>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3 pt-5">
+            <h2 style="padding-top: 100px;"><b><u>USA OFFICE</u></b></h2>
+            <div class="address1">
+                <div style="padding-top: 50px; padding-left: 20px;" class="usa-address">
+                    <img src="./images/placeholder (1).png" alt="" height="30px">
+                </div>
+                <div style="padding-left: 70px;margin-top: -27px;" class="address1">
+                    <h4>USA Address:</h4>
+                    <p style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">1353, 701 Tillery <br>
+                        Street Unit 12, <br> Austin, TX, Travis, US <br> 78702</p>
+                </div>
+                <div style="padding-left: 15px;" class="mail-address pt-4">
+                    <img src="./images/3296467 (1).png" alt="" height="30px">
+                    <h4 style="padding-left: 60px;margin-top: -27px;">Email</h4>
+                    <p style="font-size: 15px; padding-left: 60px;">business@datics.ai</p>
+                </div>
+                <div style="padding-left: 15px;padding-top: 40px;" class="phone">
+                    <img src="./images/1959251 (1).png" alt="" height="30px">
+                    <h4 style="padding-left: 60px; margin-top: -27px;">Phone</h4>
+                    <p style="font-size: 15px; padding-left: 60px;">+1(985) 260-8864</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-top: 148px;" class="col-md-3">
+            <h2><b><u>Pakistan Office</u></b></h2>
+            <div class="address1">
+                <div style="padding-top: 50px; padding-left: 20px;" class="usa-address">
+                    <img src="./images/placeholder (1).png" alt="" height="30px">
+                </div>
+                <div style="padding-left: 70px;margin-top: -27px;" class="address1">
+                    <h4>Pak Address:</h4>
+                    <p style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">107-G, Dha Phase1, Lahore,
+                        <br>
+                        Pakistan
+                    </p>
+                </div>
+                <div style="padding-left: 15px;" class="mail-address pt-4">
+                    <img src="./images/3296467 (1).png" alt="" height="30px">
+                    <h4 style="padding-left: 60px;margin-top: -27px;">Email</h4>
+                    <p style="font-size: 15px; padding-left: 60px;">contact@datics.ai</p>
+                </div>
+                <div style="padding-left: 15px;padding-top: 40px;" class="phone">
+                    <img src="./images/1959251 (1).png" alt="" height="30px">
+                    <h4 style="padding-left: 60px; margin-top: -27px;">Phone</h4>
+                    <p style="font-size: 15px; padding-left: 60px ;">+92 333 4929891</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div style="padding-top: 148px;" >
+                <h2><b><u>Follow Us</u></b></h2>
+            </div>
+            <div style="padding-top: 50px;" class="social-icon">
+                <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                    <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-2741d9a"
+                        href="https://www.facebook.com/datics/" target="_blank">
+                        <i class='fab fa-facebook-f' style='font-size:48px;color:rgb(0, 0, 203)'></i></a>
+                </span>
+                <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                    <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-eb15b91"
+                        href="" target="_blank">
+                        <i class='fab fa-youtube' style='font-size:48px;color:red'></i></a>
+                </span>
+                <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                    <a style="text-decoration: none;"
+                        class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-61a7a50"
+                        href="" target="_blank">
+                        <i class='fab fa-twitter' style='font-size:48px;color:rgb(0, 0, 203)'></i> </a>
+                </span>
+                <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                    <a style="text-decoration: none;"
+                        class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-cdf887f"
+                        href="" target="_blank">
+                        <i class='fab fa-linkedin-in' style='font-size:48px;color:rgb(0, 0, 203)'></i> </a>
+                </span>
+                <span style="font-size: 30px;padding: 7px;" class="elementor-grid-item">
+                    <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-2741d9a"
+                        href="" target="_blank">
+                        <i class='fab fa-instagram' style='font-size:48px;color:red'></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<!-- footer end -->
+<div style="height: 50px;" class="container-fluid pt-lg-4">
+    <div class="row">
+        <div class="col-md-6">
+            <p>© 2023 Datics All Right Revered.
+            </p>
+        </div>
+        <div class="col-md-6 text-end">
+            <h4 class="myfont">Developer:Muhammad Azeem</h4>
+        </div>
+    </div>
+</div>
+
 
 
     
