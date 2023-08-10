@@ -43,17 +43,38 @@
 }
     /* jobs end */
 
-       /* email section start */
-       .email-section {
+   
+        /* search bar start */
+        .search-box{
             width: 100%;
-            height: 300px;
-            background-image: url(./images/bg2-home9.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: #061E64;
+            height: 400px;
+            background-color: #370080;
+            
         }
-
-        /* email section end */
+        #mail{
+            background-color: transparent;
+            border: none;
+            outline: 1px solid rgb(160, 160, 160);
+            padding: 10px;
+            width: 35%;
+            border-radius: 5px;
+            color: rgb(176, 176, 176);
+        }
+        #mail::placeholder{
+            color: rgb(157, 157, 157);
+        }
+        .ebtn{
+            padding: 8px 20px;
+            border: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            width: 170px;
+            margin-left: 10px;
+            color: white;
+            background-color: rgb(255, 221, 70);
+        }
+        /* search bar end css */
 
           /* footer start */
           .footer {
@@ -145,7 +166,7 @@
     </nav>
     <!-- navbar end -->
 
-    <div class="container-fluid career-page">
+    <div style="margin-top: 60px;" class="container-fluid career-page">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-7">
@@ -206,26 +227,28 @@
     </div>
     <!-- jobs end -->
 
-      <!-- email section start -->
-      <div class="container-fluid email-section">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <h1 style="color: white; text-align: center;padding-top: 20px;"><b>Subscribe For Newsletter</b></h1>
-                <p class="pt-3" style="color: white;text-align: center;">The Datics Connection <br>
-                    Your connection to the latest technology news</p><br><br>
-                <div style="padding-top: 5px;">
-                    <input style="background-color: transparent;border: 2px solid white;width: 480px;border-radius: 2px;border-radius: 5px;font-size: 20px" type="text" placeholder="Email">
-                    <button style="border: transparent;border-radius: 5px;" type="button" class="btn1 btn-warning">Warning</button>
-                </div>
+     <!-- search bar start -->
+<div class="container-fluid ">
+    <div class="row mt-lg-5 search-box">
+        <div class="col-lg-12">
+            <h1 class="myfont text-white mt-lg-5" align="center">Subscribe For Newsletter</h1>
+            <p align="center" class="text-secondary myfont">The Datics Connection <br>
+                Your connection  to the latest technology news</p>
+               <div class="d-flex justify-content-center">
+                <input type="email" placeholder="Email" id="mail"><button class=" ebtn">Send</button>
 
-            </div>
-            <div class="col-md-3"></div>
-
-
+               </div>
         </div>
+            
+                
+
+
     </div>
-    <!-- email section end -->
+
+</div>
+
+<!-- search bar end -->
+
 
      <!-- footer start -->
      <div class="container-fluid footer">
