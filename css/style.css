@@ -223,3 +223,20 @@
 
 /* footer end */
 /* okasha */
+
+
+/* Meraj Ahmad */
+.header{
+    background-image: url(../images/bg-art-home4.png);
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    padding-left: 150px;
+}
+.btn{
+    background: #061E64;
+    color: white;
+}
+.btn:hover{
+    color: white;
+    border: 2px;
+}
